@@ -1,5 +1,5 @@
 
-window.alert('あなたのパソコンはウイルスに感染されました');
+var result = window.alert('あなたのパソコンはウイルスに感染されました');
 console.log('あなたのパソコンはウイルスに感染されました');
 
 var number = math.floor(Math.random()*3);
