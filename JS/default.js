@@ -1,4 +1,4 @@
-var result = window.alert('準備OK?');
+var result = window.confirm('準備OK?');
 
 if(result){
     document.getElementById('choice').textContent = 'OKが押されました';
