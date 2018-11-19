@@ -1,6 +1,15 @@
 
-var result = window.alert('あなたのパソコンはウイルスに感染されました');
-console.log('あなたのパソコンはウイルスに感染されました');
+var B = window.alert('あなたのパソコンはウイルスに感染されました。');
+document.getElementById('choice').textContent = B;
+
+var result = window.alert('準備OK?');
+
+if(result){
+    document.getElementById('choice').textContent = 'OKが押されました';
+}else{
+document.getElementById('choice').textContent = 'キャンセルが押されました';
+}
+document.getElementById('choice').textContent = result;
 
 var number = math.floor(Math.random()*3);
 var answer = parseInt(window.prompt('数あてゲーム。０～２の数字を入力してください'));
@@ -15,4 +24,5 @@ message='残念！もっと小さいです';
 }else{
     message = '０～３の数字を入力してください';
 }
+
 document.getElementById('choice').textContent = message;
