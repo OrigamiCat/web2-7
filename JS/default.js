@@ -1,7 +1,3 @@
-
-var B = window.alert('あなたのパソコンはウイルスに感染されました。');
-document.getElementById('choice').textContent = B;
-
 var result = window.alert('準備OK?');
 
 if(result){
@@ -9,7 +5,6 @@ if(result){
 }else{
 document.getElementById('choice').textContent = 'キャンセルが押されました';
 }
-document.getElementById('choice').textContent = result;
 
 var number = math.floor(Math.random()*3);
 var answer = parseInt(window.prompt('数あてゲーム。０～２の数字を入力してください'));
